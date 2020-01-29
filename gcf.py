@@ -58,11 +58,11 @@ def relo_calc(request):
     request_json = request.get_json(silent=True)
     request_args = request.args
     if request_json and 'base_amount' in request_json:
-        base_amount = request_json['base_amount']
+        base_amount = float(request_json['base_amount'])
     elif request_args and 'base_amount' in request_args:
-        base_amount = request_args['base_amount']
+        base_amount = float(request_args['base_amount'])
     else:
-        base_amount = 1000
+        base_amount = float(1000)
     rc = reloc_calc(base_amount = base_amount).get()
     final_val = jsonify(rc)
     return final_val
