@@ -16,7 +16,14 @@ On VM
 
 ```pip install requests```
 
+```mkdir data```
+
 VM E2 16 vCPU - pool(32)
 real    1m0.743s
 user    1m55.490s
 sys     0m7.526s
+
+VM N1 HIGH CPU 16 - pool(32)
+real    1m7.973s
+user    1m53.171s
+sys     0m8.298s
