@@ -1,4 +1,12 @@
 import requests
+import json
+import sys
+
+try:
+    base_path = sys.argv[1]
+except IndexError:
+    print("path needed! eg: /path/to/save")
+    sys.exit(1)
 
 def automate_calc(base_amount):
     ba = str(base_amount)
@@ -8,4 +16,9 @@ def automate_calc(base_amount):
     return response.json()
 #print(automate_calc(7750.37))
 for i in range(7000, 15000, 1000):
-    print(automate_calc(i))
+    fname = base_path + '/' + '{}.json'.format(i)
+    print(fname)
+    a = automate_calc(i)
+    print(a)
+    with open(fname, 'w') as json_file:
+        json.dump(a, json_file)
