@@ -10,6 +10,8 @@ On VM
 
 ```bash vm-install.sh```
 
+```which python3```
+
 ```virtualenv -p /PATH/TO/bin/python3 py3env```
 
 ```source py3env/bin/activate```
@@ -27,3 +29,8 @@ VM N1 HIGH CPU 16 - pool(32)
 real    1m7.973s
 user    1m53.171s
 sys     0m8.298s
+
+VM e2-highcpu-16-us-west1-b - pool(32)
+real    1m1.434s
+user    1m52.471s
+sys     0m7.010s
