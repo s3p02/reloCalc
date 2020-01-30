@@ -34,3 +34,8 @@ VM e2-highcpu-16-us-west1-b - pool(32)
 real    1m1.434s
 user    1m52.471s
 sys     0m7.010s
+
+VM n1-custom-22c82r-us-west2-a-t - pool(44)
+real    1m3.483s
+user    1m48.517s
+sys     0m7.605s
